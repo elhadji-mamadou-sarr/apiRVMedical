@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id('IdSoin');
             $table->string('libelle');
             $table->float('cout');
-            $table->timestamps();
+            // $table->timestamps();
         });
     }
 
