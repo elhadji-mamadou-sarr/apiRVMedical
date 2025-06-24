@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\CategorieController;
+use App\Http\Controllers\API\PatientController;
 use App\Http\Controllers\API\ProduitController;
 use App\Http\Controllers\SoinController;
 use Illuminate\Http\Request;
@@ -14,3 +15,4 @@ Route::get('/ping', function () {
 Route::apiResource('categories', CategorieController::class);
 Route::apiResource('produits', ProduitController::class);
 Route::apiResource('soins', SoinController::class);
+Route::apiResource('patients', PatientController::class);
