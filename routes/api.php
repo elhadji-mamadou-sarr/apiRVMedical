@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\CategorieController;
+use App\Http\Controllers\API\MedecinController;
 use App\Http\Controllers\API\PatientController;
 use App\Http\Controllers\API\ProduitController;
 use App\Http\Controllers\SoinController;
@@ -12,6 +13,7 @@ Route::get('/ping', function () {
     return response()->json(['message' => 'pong']);
 });
 
+Route::apiResource('medecins', MedecinController::class);
 Route::apiResource('categories', CategorieController::class);
 Route::apiResource('produits', ProduitController::class);
 Route::apiResource('soins', SoinController::class);
