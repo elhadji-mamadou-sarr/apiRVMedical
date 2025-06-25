@@ -4,7 +4,7 @@ use App\Http\Controllers\API\CategorieController;
 use App\Http\Controllers\API\MedecinController;
 use App\Http\Controllers\API\PatientController;
 use App\Http\Controllers\API\ProduitController;
-use App\Http\Controllers\RendezVousController;
+use App\Http\Controllers\API\RendezVousController;
 use App\Http\Controllers\SoinController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;

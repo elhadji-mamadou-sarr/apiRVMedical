@@ -28,4 +28,6 @@ class RendezVous extends Model
     {
         return $this->belongsTo(Soin::class, 'IdSoin');
     }
+    
 }
+

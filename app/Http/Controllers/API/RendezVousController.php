@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\RendezVousRequest;
 use App\Models\RendezVous;
 use Illuminate\Http\Request;
@@ -12,7 +13,7 @@ class RendezVousController extends Controller
 
     public function index()
     {
-        return RendezVous::with('categorie')->get();
+        return RendezVous::all();
     }
 
 
