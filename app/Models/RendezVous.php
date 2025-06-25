@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class RendezVous extends Model
 {
 
-    protected $table = 'rendez_vous';
-    protected $primaryKey = 'idRv';
+    // protected $table = 'rendez_vous';
+    // protected $primaryKey = 'idRv';
 
     protected $fillable = [
         'DateRv', 'Statut', 'IdPatient', 'IdMedecin', 'IdSoin'
