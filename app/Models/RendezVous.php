@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class RendezVous extends Model
 {
 
-    // protected $table = 'rendez_vous';
-    // protected $primaryKey = 'idRv';
+    protected $table = 'rendez_vous';
+    protected $primaryKey = 'IdRv';
 
     protected $fillable = [
         'DateRv', 'Statut', 'IdPatient', 'IdMedecin', 'IdSoin'
@@ -28,6 +28,6 @@ class RendezVous extends Model
     {
         return $this->belongsTo(Soin::class, 'IdSoin');
     }
-    
+
 }
 

@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Patient extends Model
 {
+    protected $primaryKey = 'idU';
+
     protected $fillable = [
         'NomPrenom', 
         'Tel',
