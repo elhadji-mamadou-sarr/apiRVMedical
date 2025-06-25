@@ -11,7 +11,7 @@ class MedecinController extends Controller
 {
     public function index()
     {
-        return Medecin::with(['patient', 'medecin', 'soin'])->get();
+        return Medecin::all();
     }
 
     public function store(MedecinRequest $request)
